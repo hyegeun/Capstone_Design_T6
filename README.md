@@ -30,4 +30,4 @@
 
 **예시**
 
-<img src="read_img\origin.gif" style="width:30%;" /> <img src="read_img\result.gif" style="width:30%;" />
+<img src="read_img\origin.gif" style="width:10%;" /> <img src="read_img\result.gif" style="width:10%;" />
