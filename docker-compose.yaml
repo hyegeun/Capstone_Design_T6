@@ -1,0 +1,49 @@
+version: '3'
+
+services:   
+  yolov5:
+    image: yolov5
+    container_name: "yolov5"
+    volumes: 
+      - harbor:/var/lib/docker/volumes/harbor/_data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    networks: 
+      default: 
+        ipv4_address: 172.21.0.3
+    command: python flask/start.py
+    depends_on:
+      - opensfm
+    
+  opensfm:
+    image: opensfm
+    container_name: "opensfm"
+    volumes: 
+      - harbor:/var/lib/docker/volumes/harbor/_data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    networks: 
+      default: 
+        ipv4_address: 172.21.0.2
+    command: python3 viewer/server.py -d data/result
+    
+volumes:
+  harbor:
+  
+networks: 
+  default: 
+    ipam: 
+      driver: default 
+      config:
+        - subnet: "172.21.0.0/16"
+        
