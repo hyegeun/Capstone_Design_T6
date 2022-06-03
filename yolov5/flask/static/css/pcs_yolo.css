@@ -1,0 +1,94 @@
+a {
+    text-decoration-line: none;
+    color: inherit;
+  }
+
+  .header {
+    height: 50px;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 1%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    }
+    .nav-items {
+        display: flex;
+        color: white;
+        margin-left: auto;
+        margin-right: 10px;
+        }
+.nav-item {
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-item:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: aquamarine;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.nav-item:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.title {
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    font-weight: 300;
+    margin: 1%;
+}
+.body {
+    color: aliceblue;
+    height: 100vh;
+    background-image: url('static/images/background.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+.headtitle {
+    margin-left: 700;
+    font-size: 35;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 30;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    
+}
+.subtitle{
+    margin-left: 820;
+    font-size: 30;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+img{
+    margin-left: 730;
+    margin-top: 100;
+    width: 500;
+    height: 500;
+    color: white;
+}
