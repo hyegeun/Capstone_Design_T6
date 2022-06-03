@@ -24,10 +24,10 @@
 
 **아키텍처**
 
-![아키텍처](read_img\architecture.png)
+<img src="read_img\architecture1.png" style="zoom:80%;" />
 
 ------
 
 **예시**
 
-<img src="read_img\origin.gif" style="zoom:50%;" /> <img src="read_img\result.gif" style="zoom:50%;" />
+<img src="read_img\origin.gif" style="zoom:30%;" /> <img src="read_img\result.gif" style="zoom:30%;" />
