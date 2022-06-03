@@ -1,0 +1,21 @@
+# Ignore everything
+*
+
+# Pick what to include
+!bin
+
+!doc
+!LICENSE
+!opensfm
+!README.md
+!requirements.txt
+!setup.cfg
+!setup.py
+!viewer
+!color_point.py
+
+# Picking exceptions
+doc/build
+**/*.so
+**/*.pyc
+**/__pycache__

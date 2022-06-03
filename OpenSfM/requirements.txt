@@ -1,0 +1,23 @@
+cloudpickle==0.4.0
+exifread==2.1.2
+flask==1.1.2
+itsdangerous==2.0.1
+fpdf2==2.4.6
+joblib==0.14.1
+matplotlib
+networkx==2.5
+numpy
+Pillow>=8.1.1
+pyproj>=1.9.5.1
+pytest==3.0.7
+python-dateutil>=2.7
+pyyaml==5.4
+scipy
+Sphinx==4.0.2
+six
+xmltodict==0.10.2
+wheel
+opencv-python==4.5.1.48 ; sys_platform == "win32"
+Jinja2<3.1
+werkzeug==2.0.2
+pandas

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../static/css/upload.css" />
+
+        <title>Detect Crack</title>
+    </head>
+    <body style="background-image: url('../static/images/background.jpg'); background-size: cover;"  class="body">
+        <div class="header">
+            <a href='/'>2022 Software Engineering Capstone Design T6</a>
+            <div class="nav-items">
+                <div class="nav-item">Introduction</div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="title">
+                Detect Crack!
+            </div>
+
+            <div class="middle">
+                <form action="http://172.21.0.3:5000/pcs_yolo" method="POST" enctype="multipart/form-data">
+                        
+                    <video class="btn video" id="video"></video><br>
+                    <input class="btn" id="file" type="file" name="file" accept="video/mp4,video/mkv, video/x-m4v,video/*"><br>
+                    <input type="submit" button type="button" class="btn submit" onclick="location.href='172.21.0.3:5000/pcs_yolo'" value="NEXT"></button>
+                </form>
+            </div>
+
+        </div>
+    </body>
+
+    <script>
+        const inputFile = document.getElementById("file");
+        const video = document.getElementById("video");
+
+        inputFile.addEventListener("change", function(){
+            const file = inputFile.files[0];
+            const videourl = URL.createObjectURL(file);
+            video.setAttribute("src", videourl);
+            video.play();
+        })
+    </script> 
+
+</html>
